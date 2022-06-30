@@ -6,6 +6,12 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		57F09DA9286D4669009A13A1 /* MyRnLib1.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F09DA8286D4669009A13A1 /* MyRnLib1.m */; };
+		57F09DAC286D46DB009A13A1 /* MyRNViewOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F09DAB286D46DB009A13A1 /* MyRNViewOne.m */; };
+		BA678B5C36608A77CD90A8A5 /* Pods_MyRnLib1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED70C7BE2334D8678D50F85 /* Pods_MyRnLib1.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,6 +26,13 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libMyRnLib1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMyRnLib1.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		57F09DA7286D4669009A13A1 /* MyRnLib1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRnLib1.h; sourceTree = "<group>"; };
+		57F09DA8286D4669009A13A1 /* MyRnLib1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRnLib1.m; sourceTree = "<group>"; };
+		57F09DAA286D46DB009A13A1 /* MyRNViewOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyRNViewOne.h; sourceTree = "<group>"; };
+		57F09DAB286D46DB009A13A1 /* MyRNViewOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyRNViewOne.m; sourceTree = "<group>"; };
+		6092A3812ACBB29F3A2E64D3 /* Pods-MyRnLib1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyRnLib1.debug.xcconfig"; path = "Target Support Files/Pods-MyRnLib1/Pods-MyRnLib1.debug.xcconfig"; sourceTree = "<group>"; };
+		8355C0224EE6D46279FEFD90 /* Pods-MyRnLib1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyRnLib1.release.xcconfig"; path = "Target Support Files/Pods-MyRnLib1/Pods-MyRnLib1.release.xcconfig"; sourceTree = "<group>"; };
+		FED70C7BE2334D8678D50F85 /* Pods_MyRnLib1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyRnLib1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,12 +40,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA678B5C36608A77CD90A8A5 /* Pods_MyRnLib1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06C1C17EB6592327A531E54B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FED70C7BE2334D8678D50F85 /* Pods_MyRnLib1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -44,8 +66,23 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				57F09DAA286D46DB009A13A1 /* MyRNViewOne.h */,
+				57F09DAB286D46DB009A13A1 /* MyRNViewOne.m */,
+				57F09DA7286D4669009A13A1 /* MyRnLib1.h */,
+				57F09DA8286D4669009A13A1 /* MyRnLib1.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				B8FBEFC10AFC041BAE928B53 /* Pods */,
+				06C1C17EB6592327A531E54B /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		B8FBEFC10AFC041BAE928B53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6092A3812ACBB29F3A2E64D3 /* Pods-MyRnLib1.debug.xcconfig */,
+				8355C0224EE6D46279FEFD90 /* Pods-MyRnLib1.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,6 +92,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "MyRnLib1" */;
 			buildPhases = (
+				639FCE80D1F8E3E193491CE9 /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -100,11 +138,38 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		639FCE80D1F8E3E193491CE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyRnLib1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57F09DA9286D4669009A13A1 /* MyRnLib1.m in Sources */,
+				57F09DAC286D46DB009A13A1 /* MyRNViewOne.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +289,7 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6092A3812ACBB29F3A2E64D3 /* Pods-MyRnLib1.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -240,6 +306,7 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8355C0224EE6D46279FEFD90 /* Pods-MyRnLib1.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
