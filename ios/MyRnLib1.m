@@ -1,7 +1,7 @@
 // MyRnLib1.m
 
 #import "MyRnLib1.h"
-
+#import <React/RCTLog.h>
 
 @implementation MyRnLib1
 
